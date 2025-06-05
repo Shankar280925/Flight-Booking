@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Strat Hawk</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <div class="nav">
+            <h1 class="logo">Strat Hawk</h1>
+            <a class="nav-item" href="index.html">Home</a> 
+            <a class="nav-item" href="bookings.html">My Bookings</a> 
+            <a class="nav-item" href="destinations.html">Destinations</a> 
+            <a class="nav-item" href="login.html">Login</a> 
+            <a class="nav-item" href="signup.html">Signup</a>
+        </div>
+        <img class="banner-image" src="images/flight.jpeg">
+        <div class="shading"></div>
+        <div class="banner-text">The World is yours.</div>
+        <div class="search-form-container">
+            <h2 class="heading">Search Flights</h2>
+            <form action="index.html">
+                <div class="search-element-container">
+                    <div class="form-group">
+                        <input class="form-input" type="text" name="from" placeholder="From" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-input" type="text" name="to" placeholder="To" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="travelDate" placeholder="Travel Date yyyy-mm-dd" 
+                           class="form-input" pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))" 
+                           title="yyyy-mm-dd" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="class" class="form-input">
+                            <option>Economy</option>
+                            <option>Business</option>
+                            <option>First</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="Search" class="btn">
+            </form>
+        </div>
+
+        <div class="recommended-flights">
+            <h2 class="heading-recommended-flights">Recommended Flights</h2>
+            <div class="flights">
+                <div class="flight">
+                    <div class="flight-number">SH288</div>
+                    <div class="schedule">
+                        <div class="departure">
+                            <div class="from">Berlin (BER)</div>
+                            <div class="departTime">21:00</div>
+                            <div class="departDate">Wed 28 Oct 2020</div>
+                        </div>
+                        <div class="duration">49 hrs 5 mins</div>
+                        <div class="arrival">
+                            <div class="to">Sydney (SYD)</div>
+                            <div class="arriveTime">08:05</div>
+                            <div class="arriveDate">Sat 31 Oct 2020</div>
+                        </div>
+                    </div>
+                    <div class="cost">$3,447</div>
+                    <form action="bookings.html">
+                        <input type="submit" value="Book" class="btn">
+                    </form>
+                </div>
+                <div class="flight">
+                    <div class="flight-number">SH245</div>
+                    <div class="schedule">
+                        <div class="departure">
+                            <div class="from">Sydney (SYD)</div>
+                            <div class="departTime">22:25</div>
+                            <div class="departDate">Tue 10 Nov 2020</div>
+                        </div>
+                        <div class="duration">23 hrs 55 mins</div>
+                        <div class="arrival">
+                            <div class="to">Berlin (BER)</div>
+                            <div class="arriveTime">12:20</div>
+                            <div class="arriveDate">Wed 11 Nov 2020</div>
+                        </div>
+                    </div>
+                    <div class="cost">$801</div>
+                    <form action="bookings.html">
+                        <input type="submit" value="Book" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

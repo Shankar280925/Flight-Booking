@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body {
+    font-family: Abel;
+    background-color: #DAE1E7;
+    margin: 0px
+}
+
+input, select, button {
+    font-family: Abel
+}
+
+.nav {
+    background-color: #142850;
+    color: #00909E;
+    width: 100%;
+    height: 5rem
+}
+
+.logo {
+    color: #DAE1E7;
+    float: left;
+    margin: 1rem
+}
+
+.nav-item {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #00909E;
+    float: left;
+    margin: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: #DAE1E7;
+}
+
+.heading {
+    color: #00909E;
+    clear: both;
+    margin-top: 0
+}
+
+.destination {
+    float: left;
+    margin-left: 1rem
+}
+
+.destination-image {
+    max-width: 100%;
+    max-height: 300px
+}
+
+
+.flights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem;
+}
+
+.flight {
+    margin-right: 0.5rem;
+    background-color: #142850;
+    padding: 0.5rem
+}
+
+.flight-number {
+    background-color: #142850;
+    color: #00909e;
+    font-weight: bold;
+    padding: 0.25rem
+}
+
+.duration {
+    font-size: 0.625rem;
+    text-align: center;
+    margin: 0.25rem;
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 0.25rem;
+}
+
+.from, .to, .departDate, .departTime, .arriveTime, .arriveDate, .duration {
+    text-align: center;
+    margin: 0.25rem;
+    color: #DAE1E7;
+}
+
+.from, .to {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.departTime, .arriveTime {
+    font-size: 13px
+}
+
+.departDate, .arriveDate {
+    font-size: 11px
+}
+
+.cost {
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5rem;
+    float: right;
+    color: #00909e
+}
+
+.btn {
+    padding: 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    background-color: #00909e;
+    color: #dae1e7;
+    cursor: pointer;
+    border: 0.1rem solid #00909e;
+/*    float: left;*/
+/*    margin: 0.5rem*/
+}
+
+.btn:hover {
+    background-color: #dae1e7;
+    color: #00909e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.login-form-container {
+    background-color: #142850;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 300px
+}
+
+.login-element-container {
+    display: grid
+}
+
+.label {
+    color: #DAE1E7;
+    display: block
+}
+
+.form-group {
+    margin-bottom: 0.5rem
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.signup-form-container {
+    width: 38rem;
+    background-color: #142850;
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+
+.signup-element-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.label-inline {
+    color: #DAE1E7;
+    display: inline
+}
+
+.search-form-container {
+    width: 20rem;
+    background-color: #142850;
+    padding: 1rem;
+    margin: 1rem;
+    position: absolute;
+    left: 50rem;
+    top: 7rem
+}
+
+.search-element-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem
+}
+
+.banner-image {
+    width: 100%;
+    position: relative
+}
+
+.shading {
+    width: 100%;
+    height: 37.5rem;
+    position: absolute;
+    opacity: 0.2;
+    background-color: #00909e;
+    top: 5rem
+}
+
+.banner-text {
+    width: 38rem;
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+    opacity: 0.8;
+    font-size: 5rem;
+    padding: 3rem;
+    color: #00909e
+}
+
+.heading-recommended-flights {
+    margin-left: 1rem;
+    color: #DAE1E7;
+}
+
+.recommended-flights {
+    position: absolute;
+    top: 23rem;
+    background-color: rgba(20, 40, 80, 0.4);
+}

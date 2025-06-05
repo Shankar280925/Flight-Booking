@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Signup - Strat Hawk</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <div class="nav">
+            <h1 class="logo">Strat Hawk</h1>
+            <a class="nav-item" href="index.html">Home</a> 
+            <a class="nav-item" href="bookings.html">My Bookings</a> 
+            <a class="nav-item" href="destinations.html">Destinations</a> 
+            <a class="nav-item" href="login.html">Login</a> 
+            <a class="nav-item" href="signup.html">Signup</a>
+        </div>
+        <div class="signup-form-container">
+            <h2 class="heading">Signup</h2>
+            <form action="login.html">
+                <div class="signup-element-container">
+                    <div class="form-group">
+                        <label class="label">Title</label>
+                        <input type="radio" name="title" value="mister" id="mister" required>
+                        <label class="label-inline" for="mister">Mr.</label>
+                        <input type="radio" name="title" value="missus" id="missus">
+                        <label class="label-inline" for="missus">Mrs.</label>
+                    </div>
+                    <div></div>
+                    <div class="form-group">
+                        <label class="label" for="firstName">First Name</label>
+                        <input type="text" class="form-input" name="firstName" id="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="lastName">Last Name</label>
+                        <input type="text" class="form-input" name="lastName" id="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="email">Email</label>
+                        <input type="text" class="form-input" name="email" id="email" required 
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                               title="xxxx@yyyy.zzz format">
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="mobileNumber">Mobile Number</label>
+                        <input type="text" class="form-input" name="mobileNumber" id="mobileNumber" pattern="[0-9]{10}">
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="password">Password</label>
+                        <input type="password" class="form-input" name="password" id="password" 
+                               pattern="    (?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                               title="A number, 1 upper case, 1 lower case with 8 or more characters" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="confirmPassword">Confirm Password</label>
+                        <input type="password" class="form-input" name="confirmPassword" id="confirmPassword" required
+                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                               title="Password must contain 1 number, 1 upper case, 1 lower case and at least 8 or more characters">
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="language">Preferred Language</label>
+                        <select class="form-input" name="language" id="language">
+                            <option>Chinese</option>
+                            <option>Spanish</option>
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Portuguese</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                        <label class="label-inline" for="newsletter">Receive newsletters</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Register" class="btn">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
