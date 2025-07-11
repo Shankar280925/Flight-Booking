@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Signup - Strat Hawk</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
@@ -46,13 +47,13 @@
                     <div class="form-group">
                         <label class="label" for="password">Password</label>
                         <input type="password" class="form-input" name="password" id="password" 
-                               pattern="    (?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                                title="A number, 1 upper case, 1 lower case with 8 or more characters" required>
                     </div>
                     <div class="form-group">
                         <label class="label" for="confirmPassword">Confirm Password</label>
                         <input type="password" class="form-input" name="confirmPassword" id="confirmPassword" required
-                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                                title="Password must contain 1 number, 1 upper case, 1 lower case and at least 8 or more characters">
                     </div>
                     <div class="form-group">
